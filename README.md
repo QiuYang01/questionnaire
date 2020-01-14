@@ -23,7 +23,7 @@ npm run unit
 
 # run e2e tests
 npm run e2e
-
+111
 # run all tests
 npm test
 ```
@@ -31,5 +31,5 @@ npm test
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 =======
 问卷调查
-111111111
+
 >>>>>>> 82ca83cec5a53660100765c3f5f413c57d1837f5
