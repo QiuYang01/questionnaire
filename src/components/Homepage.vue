@@ -59,9 +59,7 @@ export default {
 }
 </script>
 <style scope>
- .el-menu-item {
-     
- }
+
 
   
   .bg-purple {
