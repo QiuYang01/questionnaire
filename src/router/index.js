@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import register from '@/components/register'
 import login from '@/components/login'
+import homepage from '@/components/Homepage'
 
 Vue.use(Router)
 
@@ -11,6 +12,7 @@ export default new Router({
     {
       path: '/',
       name: 'HelloWorld',
+      redirect:'login',
       component: HelloWorld
     },
     {
@@ -20,6 +22,16 @@ export default new Router({
     {
       path:'/login',
       component:login
+    },
+    {
+      path:'/homepage',
+      component:homepage,
+      children :[ //主页的子路由
+        {
+          path:'register',
+          component:register
+        }
+      ]
     }
   ]
 })

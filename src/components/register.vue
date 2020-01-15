@@ -18,10 +18,10 @@
         <el-form-item label="确认密码" prop="checkPass">
             <el-input type="password" v-model="ruleForm.checkPass" autocomplete="off"></el-input>
         </el-form-item>
-        <el-form-item>
-            <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>
-            <el-button @click="resetForm('ruleForm')">重置</el-button>
-            
+        <el-form-item>&#12288;&#12288;
+            <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>&#12288;&#12288;&#12288;&#12288;
+            <el-button @click="resetForm('ruleForm')">重置</el-button>&#12288;&#12288;&#12288;
+             <router-link to='login'><el-button type="text" size="mini" >去登录</el-button></router-link>
         </el-form-item>
         </el-form>
     </el-col>
