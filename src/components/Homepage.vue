@@ -19,7 +19,7 @@
           <i class="el-icon-setting"></i>
           <span>问卷管理</span>
         </template>
-          <el-menu-item index="/homepage/register" style="min-width: auto;">我的问卷</el-menu-item>
+          <el-menu-item index="/homepage/myquestionnaire" style="min-width: auto;">我的问卷</el-menu-item>
           <el-menu-item index="/homepage/publish" style="min-width: auto;">发布问卷</el-menu-item>
            <el-menu-item index="1-2" style="min-width: auto;">修改问卷</el-menu-item>
           <el-menu-item index="1-2" style="min-width: auto;">删除问卷</el-menu-item>
@@ -36,7 +36,7 @@
     </el-menu>
     </el-col>
 
-  <el-col :span="21">
+  <el-col :span="21" >
       <div class="grid-content bg-purple-light">
          <router-view></router-view>  <!-- //子路由放的组件 -->
       </div>

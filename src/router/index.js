@@ -4,7 +4,8 @@ import HelloWorld from '@/components/HelloWorld'
 import register from '@/components/register'
 import login from '@/components/login'
 import homepage from '@/components/Homepage'
-import publish from '@/components/publishQuestionnaire'
+import publish from '@/components/questionManage/publishQuestionnaire'
+import myquestionnaire from '@/components/questionManage/myquestionnaire'
 
 Vue.use(Router)
 
@@ -33,8 +34,8 @@ export default new Router({
           component:publish
         },
         {
-          path:'register',
-          component:register
+          path:'myquestionnaire',
+          component:myquestionnaire
         }
       ]
     }

@@ -57,13 +57,15 @@
        
         dynamicValidateForm.time = this.getTime();
       // console.log(this.$refs.name.value);
-          console.log( dynamicValidateForm);
+        //  console.log( dynamicValidateForm);
+         console.log( dynamicValidateForm);
         this.$refs.dynamicValidateForm.validate((valid) => {
           if ( valid && this.$refs.name.value!='') {
             alert('submit!');
              console.log("压缩后"+this.qs.stringify(dynamicValidateForm));
           } else {
             console.log('error submit!!');
+            alert("请填写完整");
             return false;
           }
         });
