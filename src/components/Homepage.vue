@@ -2,7 +2,7 @@
 <el-row style="margin: 0;padding: 0; ">
   <el-col :span="3" style=" ">
      <el-menu
-      default-active="2"
+      default-active="1"
       :router="true"
       :unique-opened="true"
       class="el-menu-vertical-demo"
@@ -11,23 +11,25 @@
        background-color="#545c64"
       text-color="#fff"
       active-text-color="#ffd04b"
-       align="left"
+    align="left"
       style="min-height:730px; "
       >
       <el-submenu index="1">
         <template slot="title">
-          <i class="el-icon-location"></i>
-          <span>导航一</span>
+          <i class="el-icon-setting"></i>
+          <span>问卷管理</span>
         </template>
-          <el-menu-item index="/homepage/register" style="min-width: auto;">选项1</el-menu-item>
-          <el-menu-item index="1-2" style="min-width: auto;">选项2</el-menu-item>
+          <el-menu-item index="/homepage/register" style="min-width: auto;">我的问卷</el-menu-item>
+          <el-menu-item index="/homepage/publish" style="min-width: auto;">发布问卷</el-menu-item>
+           <el-menu-item index="1-2" style="min-width: auto;">修改问卷</el-menu-item>
+          <el-menu-item index="1-2" style="min-width: auto;">删除问卷</el-menu-item>
       </el-submenu>
  <el-submenu index="2">
         <template slot="title">
-          <i class="el-icon-location"></i>
-          <span>导航一</span>
+          <i class="el-icon-s-data"></i>
+          <span>问卷数据</span>
         </template>
-          <el-menu-item index="/homepage/register" style="min-width: auto;">选项1</el-menu-item>
+          <el-menu-item index="/homepage/register" style="min-width: auto;">选择问卷</el-menu-item>
           <el-menu-item index="1-2"    style="min-width: auto;">选项2</el-menu-item>
       </el-submenu>
 
