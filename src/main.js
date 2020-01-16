@@ -13,8 +13,9 @@ Vue.use(elementui)
 import axios from 'axios'
 Vue.prototype.axios = axios
 
-// import qs from 'qs' // 使用qs对post传送的据序列化
-// Vue.prototype.qs = qs;
+import QS from 'qs'
+Vue.prototype.qs = QS;
+
 
 /* eslint-disable no-new */
 new Vue({

@@ -94,12 +94,13 @@
          
         this.$refs[formName].validate((valid) => {
           if (valid) {
-              验证成功
+              // 验证成功
             console.log( "账号"+this.$refs.id.value)
             console.log( "密码"+this.$refs.password.value)
-         var params = new URLSearchParams();
-          params.append('name',this.$refs.id.value);
-           this.axios.post('http://127.0.0.1:9000/io/addproduct', params)
+        //  var params = new URLSearchParams();
+        //   params.append('name',this.$refs.id.value);
+           //console.log(this.qs.stringify({name:this.$refs.id.value}))
+           this.axios.post('http://127.0.0.1:9000/io/addproduct', this.qs.stringify({name:this.$refs.id.value}))
             .then( (response) => {
               console.log(response);
             })
