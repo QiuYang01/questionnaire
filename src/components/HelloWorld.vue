@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <button @click="add">增加</button>
+    <h1>{{this.$store.state.count}}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -89,6 +90,11 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
+    }
+  },
+  methods:{
+    add(){
+      this.$store.dispatch('addFun','10')
     }
   }
 }

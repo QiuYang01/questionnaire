@@ -6,6 +6,7 @@ import login from '@/components/login'
 import homepage from '@/components/Homepage'
 import publish from '@/components/questionManage/publishQuestionnaire'
 import myquestionnaire from '@/components/questionManage/myquestionnaire'
+import answer from '@/components/userPage/answer'
 
 Vue.use(Router)
 
@@ -14,8 +15,8 @@ export default new Router({
     {
       path: '/',
       name: 'HelloWorld',
-      redirect:'login',
-      component: HelloWorld
+      // redirect:'login',
+      component: answer
     },
     {
       path:'/register',
