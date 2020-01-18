@@ -1,7 +1,7 @@
 <template>
   <div class="hello">
     <button @click="add">增加</button>
-    <h1>{{this.$store.state.count}}</h1>
+    <h1>{{this.$store.state.userId}}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li>
@@ -94,7 +94,7 @@ export default {
   },
   methods:{
     add(){
-      this.$store.dispatch('addFun','10')
+      this.$store.dispatch('setUserIdFun','10')
     }
   }
 }

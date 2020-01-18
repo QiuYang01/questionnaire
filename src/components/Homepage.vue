@@ -21,16 +21,17 @@
         </template>
           <el-menu-item index="/homepage/myquestionnaire" style="min-width: auto;">我的问卷</el-menu-item>
           <el-menu-item index="/homepage/publish" style="min-width: auto;">发布问卷</el-menu-item>
-           <el-menu-item index="1-2" style="min-width: auto;">修改问卷</el-menu-item>
-          <el-menu-item index="1-2" style="min-width: auto;">删除问卷</el-menu-item>
+           <el-menu-item index="#" style="min-width: auto;">修改问卷</el-menu-item>
+          <el-menu-item index="#" style="min-width: auto;">删除问卷</el-menu-item>
       </el-submenu>
  <el-submenu index="2">
         <template slot="title">
           <i class="el-icon-s-data"></i>
           <span>问卷数据</span>
         </template>
-          <el-menu-item index="/homepage/register" style="min-width: auto;">选择问卷</el-menu-item>
-          <el-menu-item index="1-2"    style="min-width: auto;">选项2</el-menu-item>
+          <el-menu-item index="#" style="min-width: auto;">选择问卷</el-menu-item>
+          <el-menu-item index="#"    style="min-width: auto;">选项2</el-menu-item>
+           <el-menu-item index="#"    style="min-width: auto;">id:{{this.$store.state.userId}}</el-menu-item>
       </el-submenu>
 
     </el-menu>

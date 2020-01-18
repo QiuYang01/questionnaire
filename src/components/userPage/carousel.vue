@@ -26,14 +26,17 @@
     </div>
     <div style="margin-top:20px">
         <el-button v-show="(this.position+1)%this.dynamicValidateForm.questionAndOptions.length===0" style="width:10%" type="danger" round @click="submit">提 交</el-button>
+   
     </div>
   </div>
 </template>
 <script>
 export default {
+  props:["questionaire_id"], //父组件传过来的问卷id
   data() {
     return {
       position:0, //当前题目的位置
+      user_ip:'',
       answers:[], //答案
        dynamicValidateForm: {
           questionAndOptions: [{ 
@@ -74,6 +77,8 @@ export default {
   },
   methods: {
     prev(){
+     
+      console.log(this.parentwjid);
       this.position--;
       this.$refs.carousel.prev();
     },
@@ -95,6 +100,9 @@ export default {
       else
       console.log("shibai");
     }
+  },
+  created(){
+    console.log(this.questionaire_id); //可以在这里发请求，初始化数据
   }
     
 }

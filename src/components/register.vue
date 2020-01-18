@@ -21,7 +21,7 @@
         <el-form-item>&#12288;&#12288;
             <el-button type="primary" @click="submitForm('ruleForm')">提交</el-button>&#12288;&#12288;&#12288;&#12288;
             <el-button @click="resetForm('ruleForm')">重置</el-button>&#12288;&#12288;&#12288;
-             <router-link to='login'><el-button type="text" size="mini" >去登录</el-button></router-link>
+             <router-link to='/login'><el-button type="text" size="mini" >去登录</el-button></router-link>
         </el-form-item>
         </el-form>
     </el-col>
@@ -99,8 +99,9 @@
             console.log( "密码"+this.$refs.password.value)
         //  var params = new URLSearchParams();
         //   params.append('name',this.$refs.id.value);
-           //console.log(this.qs.stringify({name:this.$refs.id.value}))
-           this.axios.post('http://127.0.0.1:9000/io/addproduct', this.qs.stringify({name:this.$refs.id.value}))
+           console.log(this.qs.stringify({user_id:this.$refs.id.value,user_password:this.$refs.id.value}))
+           this.axios.post('http://127.0.0.1:8888/user/register', 
+                            this.qs.stringify({user_id:this.$refs.id.value , use_password:this.$refs.password.value}))
             .then( (response) => {
               console.log(response);
             })

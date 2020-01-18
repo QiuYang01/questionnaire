@@ -6,16 +6,16 @@ Vue.use(Vuex);
 //创建一个 store(仓库)
 const store = new Vuex.Store({
     state: {
-      count: 0
+      userId: ''
     },
     mutations: {
-      add (state,id) {
-        state.count = id
+      setUserId (state,id) {
+        state.userId = id
       }
     },
     actions: {
-        addFun(context,id){
-            context.commit('add',id)
+      setUserIdFun(context,id){
+            context.commit('setUserId',id)
         }
     }
   })

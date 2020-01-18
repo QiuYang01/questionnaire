@@ -39,7 +39,8 @@
             key:''
           }],
           name: '',
-          time:''
+          time:'',
+          userId:this.$store.state.userId
         }
       };
     },
@@ -54,7 +55,6 @@
       return yy+'-'+mm+'-'+dd+' '+hh+':'+mf+':'+ss;
     },
       submitForm(dynamicValidateForm) {
-       
         dynamicValidateForm.time = this.getTime();
       // console.log(this.$refs.name.value);
         //  console.log( dynamicValidateForm);
