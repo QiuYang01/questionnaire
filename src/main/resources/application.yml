@@ -1,0 +1,14 @@
+server:
+  port: 8888
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: question
+    password: que123456
+    url: jdbc:mysql://122.51.65.4:3306/question?characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&rewriteBatchedStatements=true&allowPublicKeyRetrieval=true
+  servlet:
+    multipart:
+      enabled: true
+      max-file-size: 40MB
+      max-request-size: 50MB
+
